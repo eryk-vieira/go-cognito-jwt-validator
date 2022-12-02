@@ -1,4 +1,4 @@
-package jwtValidator
+package validator
 
 import (
 	"errors"

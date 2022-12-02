@@ -40,5 +40,5 @@ func main(){
 
 <p align="center">Released in 2022. This project is under the<a href="https://github.com/eryk-vieira/go-cognito-jwt-validator/blob/master/LICENSE"> MIT license</a> 🚀</p>
 
-<p align="center"> Made with love by <a href="https://github.com/Eryk-Luiz">Eryk Luiz</a> 🚀</p>
+<p align="center"> Made with love by <a href="https://github.com/eryk-vieira">Eryk</a> 🚀</p>
 

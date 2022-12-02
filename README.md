@@ -23,13 +23,14 @@ import (
 func main(){
   // Change the config with your valid credentials
   validator := validator.New(&validator.Config{
-		Region:          "AWS Cognito Region",
-		CognitoPoolId:   "Cognito Pool Id",
-		CognitoClientId: "Cognito Client Id",
-	})
+      Region:          "AWS Cognito Region",
+	  CognitoPoolId:   "Cognito Pool Id",
+	  CognitoClientId: "Cognito Client Id",
+  })
   
   err := validator.Validate("JWT Token")
 
+  // if err != nil your Token is invalid, expired or don't follow any of yout public keys signature
   if err != nil {
     fmt.Println(err)
   }

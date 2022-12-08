@@ -23,7 +23,7 @@ import (
 func main(){
   // Change the config with your valid credentials
   validator := validator.New(&validator.Config{
-      Region:          "AWS Cognito Region",
+      	  Region:          "AWS Cognito Region",
 	  CognitoPoolId:   "Cognito Pool Id",
 	  CognitoClientId: "Cognito Client Id",
   })

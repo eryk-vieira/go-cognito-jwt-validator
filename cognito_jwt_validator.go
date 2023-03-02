@@ -44,7 +44,7 @@ func (config *Config) Validate(jwtToken string) error {
 		return errors.New("TOKEN IS FROM A DIFFERENT client_id")
 	}
 
-	if parsedToken.Issuer() != fmt.Sprintf("https://cognito-idp.us-east-2.amazonaws.com/%s", config.CognitoPoolId) {
+	if parsedToken.Issuer() != fmt.Sprintf("https://cognito-idp.%s.amazonaws.com/%s", config.Region, config.CognitoPoolId) {
 		return errors.New("TOKEN IS FROM A DIFFERENT pool_id")
 	}
 
